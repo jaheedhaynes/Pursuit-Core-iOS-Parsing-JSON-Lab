@@ -75,6 +75,10 @@
                         <viewLayoutGuide key="safeArea" id="CJi-D0-zNa"/>
                     </view>
                     <navigationItem key="navigationItem" id="qCz-rc-2bO"/>
+                    <connections>
+                        <outlet property="hexLabel" destination="jKH-JR-fVY" id="LIT-XN-pbm"/>
+                        <outlet property="rgbLabel" destination="tfL-VC-VPm" id="pzU-Fs-p3T"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="src-49-N8T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -155,6 +159,11 @@
                         <viewLayoutGuide key="safeArea" id="MdW-BC-9CO"/>
                     </view>
                     <navigationItem key="navigationItem" id="omj-wO-AS3"/>
+                    <connections>
+                        <outlet property="addressLabel" destination="e4F-Ue-JfV" id="faf-74-6gQ"/>
+                        <outlet property="birthdayLabel" destination="fJ2-81-Wrh" id="XaT-Gd-Uz3"/>
+                        <outlet property="phoneNumberLabel" destination="Bc8-Kd-ssx" id="mbg-5s-JVc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ngo-T5-nwy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -229,6 +238,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="bY2-6k-8bt"/>
                     <connections>
+                        <outlet property="tempLabel" destination="uH4-03-U7d" id="dt0-l9-9i4"/>
                         <outlet property="temperatureLabel" destination="uH4-03-U7d" id="taa-Pt-NMR"/>
                         <outlet property="weatherLabel" destination="eTw-91-oxb" id="Liy-cy-p3N"/>
                     </connections>

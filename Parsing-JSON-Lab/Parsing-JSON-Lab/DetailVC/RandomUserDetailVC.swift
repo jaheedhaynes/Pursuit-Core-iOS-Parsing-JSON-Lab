@@ -11,7 +11,7 @@ import UIKit
 class RandomUserDetailVC: UIViewController {
     @IBOutlet weak var addressLabel: UILabel!
     @IBOutlet weak var birthdayLabel: UILabel!
-    @IBOutlet weak var numberNumberLabel: UILabel!
+    @IBOutlet weak var phoneNumberLabel: UILabel!
     
     var randomUserSelection: Users?
     
@@ -57,7 +57,7 @@ class RandomUserDetailVC: UIViewController {
         
         birthdayLabel.text = dateFormatter.string(from: date)
         
-        numberNumberLabel.text = "Phone: \(validUser.phoneNumber)"
+        phoneNumberLabel.text = "Phone: \(validUser.phoneNumber)"
         
     }
     

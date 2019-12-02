@@ -8,7 +8,7 @@
 
 import UIKit
 
-class WeatherDetailController: UIViewController {
+class RectangleZoneDetailVC: UIViewController {
     @IBOutlet weak var tempLabel: UILabel!
     @IBOutlet weak var weatherLabel: UILabel!
     

@@ -31,7 +31,7 @@ class WeatherViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        guard let weatherVC = segue.destination as? WeatherDetailController, let indexPath = tableView.indexPathForSelectedRow else {
+        guard let weatherVC = segue.destination as? RectangleZoneDetailVC, let indexPath = tableView.indexPathForSelectedRow else {
             return
         }
         
