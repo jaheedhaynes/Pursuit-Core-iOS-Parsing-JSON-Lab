@@ -21,6 +21,9 @@
 		307EB8ED238DDDC7000B7456 /* RectangleZoneWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307EB8EC238DDDC7000B7456 /* RectangleZoneWeather.swift */; };
 		30C2F919238EC81A00C1C85C /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C2F918238EC81A00C1C85C /* Colors.swift */; };
 		30C2F91B238EC8BD00C1C85C /* randomUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C2F91A238EC8BD00C1C85C /* randomUser.swift */; };
+		30C2F91F238EF4A100C1C85C /* RectangleZoneDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C2F91E238EF4A100C1C85C /* RectangleZoneDetailVC.swift */; };
+		30C2F922238EF4F400C1C85C /* ColorsDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C2F921238EF4F400C1C85C /* ColorsDetailVC.swift */; };
+		30C2F924238EF51000C1C85C /* RandomUserDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C2F923238EF51000C1C85C /* RandomUserDetailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +43,9 @@
 		307EB8EC238DDDC7000B7456 /* RectangleZoneWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleZoneWeather.swift; sourceTree = "<group>"; };
 		30C2F918238EC81A00C1C85C /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		30C2F91A238EC8BD00C1C85C /* randomUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = randomUser.swift; sourceTree = "<group>"; };
+		30C2F91E238EF4A100C1C85C /* RectangleZoneDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleZoneDetailVC.swift; sourceTree = "<group>"; };
+		30C2F921238EF4F400C1C85C /* ColorsDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsDetailVC.swift; sourceTree = "<group>"; };
+		30C2F923238EF51000C1C85C /* RandomUserDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserDetailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +82,7 @@
 				307EB8C3238C8F9C000B7456 /* SceneDelegate.swift */,
 				307EB8C7238C8F9C000B7456 /* Main.storyboard */,
 				30C2F91C238EC8CF00C1C85C /* View Controllers */,
+				30C2F920238EF4A800C1C85C /* DetailVC */,
 				30C2F91D238EC8F400C1C85C /* Swift Files */,
 				30C2F917238EC74B00C1C85C /* JSON-DATA */,
 				307EB8CA238C8F9D000B7456 /* Assets.xcassets */,
@@ -113,6 +120,16 @@
 				30C2F91A238EC8BD00C1C85C /* randomUser.swift */,
 			);
 			path = "Swift Files";
+			sourceTree = "<group>";
+		};
+		30C2F920238EF4A800C1C85C /* DetailVC */ = {
+			isa = PBXGroup;
+			children = (
+				30C2F91E238EF4A100C1C85C /* RectangleZoneDetailVC.swift */,
+				30C2F921238EF4F400C1C85C /* ColorsDetailVC.swift */,
+				30C2F923238EF51000C1C85C /* RandomUserDetailVC.swift */,
+			);
+			path = DetailVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,13 +207,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				307EB8C2238C8F9C000B7456 /* AppDelegate.swift in Sources */,
+				30C2F922238EF4F400C1C85C /* ColorsDetailVC.swift in Sources */,
 				307EB8E0238D779E000B7456 /* RectangleZoneVC.swift in Sources */,
 				307EB8C4238C8F9C000B7456 /* SceneDelegate.swift in Sources */,
 				30C2F91B238EC8BD00C1C85C /* randomUser.swift in Sources */,
+				30C2F924238EF51000C1C85C /* RandomUserDetailVC.swift in Sources */,
 				30C2F919238EC81A00C1C85C /* Colors.swift in Sources */,
 				307EB8E4238D77F0000B7456 /* RandomUserVC.swift in Sources */,
 				307EB8ED238DDDC7000B7456 /* RectangleZoneWeather.swift in Sources */,
 				307EB8E2238D77B7000B7456 /* ColorsVC.swift in Sources */,
+				30C2F91F238EF4A100C1C85C /* RectangleZoneDetailVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

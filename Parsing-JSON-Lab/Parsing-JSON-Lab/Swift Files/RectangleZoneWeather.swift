@@ -8,39 +8,46 @@
 
 import Foundation
 
-struct WeatherData: Codable {
-    let list: [RectangleZoneWeather]
+struct CitiesData: Codable {
+    let list: [CityWeather] // "results" represents the json array of stories
 }
 
-struct RectangleZoneWeather: Codable {
+
+struct CityWeather: Codable {
     let name: String
     let main: [String : Double]
     let weather: [Weather]
-    
 }
 
 struct Weather: Codable {
     let description: String
 }
 
-extension WeatherData {
-    static func getWeather() -> [RectangleZoneWeather] {
-        var weather = [RectangleZoneWeather]()
-        guard let fileURL = Bundle.main.url(forResource: "RectangleZone", withExtension: "json")
-            else {
-            fatalError("YOU DONT HAVE NO JSON SON 🤯")
+
+extension CitiesData {
+    // parse the "topStoriesTechnology.json" into an array of [NewsHeadline] objects
+    static func getWeather() -> [CityWeather] {
+        
+        var weather = [CityWeather]()
+        
+        
+        guard let fileURL = Bundle.main.url(forResource: "rectangleCitiesWeather", withExtension: "json") else {
+            fatalError("could not locate json file")
         }
+        
+        
         do {
             let data = try Data(contentsOf: fileURL)
-
-            
-            let weatherData = try JSONDecoder().decode(WeatherData.self, from: data)
+                        
+            let weatherData = try JSONDecoder().decode(CitiesData.self, from: data)
             
             weather = weatherData.list
-            
         } catch {
-            print("\(error)")
+            fatalError("contents failed to load \(error)")
         }
+        
+        
+        
         return weather
     }
 }
