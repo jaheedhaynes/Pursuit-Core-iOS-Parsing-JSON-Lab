@@ -9,18 +9,18 @@
 import UIKit
 
 class RandomUserVC: UIViewController {
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var randomUserTableView: UITableView!
     
     var userArr = [Users]() {
         didSet {
-            tableView.reloadData()
+            randomUserTableView.reloadData()
         }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.dataSource = self
+        randomUserTableView.dataSource = self
         loadData()
     }
     
@@ -30,7 +30,7 @@ class RandomUserVC: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 
-        guard let userVC = segue.destination as? RandomUserDetailVC, let indexPath = tableView.indexPathForSelectedRow else {
+        guard let userVC = segue.destination as? RandomUserDetailVC, let indexPath = randomUserTableView.indexPathForSelectedRow else {
             return
         }
 

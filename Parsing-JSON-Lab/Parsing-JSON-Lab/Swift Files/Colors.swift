@@ -22,7 +22,7 @@ extension Colors {
         var color = [Colors]()
         
         
-        guard let fileURL = Bundle.main.url(forResource: "colors", withExtension: "json") else {
+        guard let fileURL = Bundle.main.url(forResource: "Colors", withExtension: "json") else {
             fatalError("could not locate json file")
         }
         

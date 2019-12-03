@@ -22,13 +22,22 @@ class ColorsDetailVC: UIViewController {
     }
 
     func updateUI() {
-        guard let validColor = color, let r = validColor.rgb["r"], let g = validColor.rgb["g"], let b = validColor.rgb["b"] else {
+        
+        guard let validColor = color, let r = validColor.rgb["r"],
+            let g = validColor.rgb["g"],
+            let b = validColor.rgb["b"]
+            else {
             fatalError("color could not be identified")
         }
+        
         navigationItem.title = validColor.name
+        
         rgbLabel.text = "RGB: \(Int(r)), \(Int(g)), \(Int(b))"
+        
         var hex = validColor.hexString
+        
         hex.removeFirst()
+        
         hexLabel.text = "Hex: \(hex.lowercased())"
     }
     

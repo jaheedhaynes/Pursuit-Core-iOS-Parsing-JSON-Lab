@@ -31,7 +31,7 @@ extension CitiesData {
         var weather = [CityWeather]()
         
         
-        guard let fileURL = Bundle.main.url(forResource: "rectangleCitiesWeather", withExtension: "json") else {
+        guard let fileURL = Bundle.main.url(forResource: "RectangleZoneWeather", withExtension: "json") else {
             fatalError("could not locate json file")
         }
         

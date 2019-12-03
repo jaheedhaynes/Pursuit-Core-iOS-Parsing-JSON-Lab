@@ -8,20 +8,20 @@
 
 import UIKit
 
-class WeatherViewController: UIViewController {
+class RectangleZoneVC: UIViewController {
     
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var rectangleZoneTableView: UITableView!
     
     var citiesArr = [CityWeather]() {
         didSet {
-            tableView.reloadData()
+            rectangleZoneTableView.reloadData()
         }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.dataSource = self
+        rectangleZoneTableView.dataSource = self
         loadData()
     }
     
@@ -31,7 +31,7 @@ class WeatherViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        guard let weatherVC = segue.destination as? RectangleZoneDetailVC, let indexPath = tableView.indexPathForSelectedRow else {
+        guard let weatherVC = segue.destination as? RectangleZoneDetailVC, let indexPath = rectangleZoneTableView.indexPathForSelectedRow else {
             return
         }
         
@@ -41,7 +41,7 @@ class WeatherViewController: UIViewController {
     
 }
 
-extension WeatherViewController: UITableViewDataSource {
+extension RectangleZoneVC: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return citiesArr.count

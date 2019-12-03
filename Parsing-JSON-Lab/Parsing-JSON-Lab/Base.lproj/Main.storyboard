@@ -43,6 +43,9 @@
                         <viewLayoutGuide key="safeArea" id="paD-h5-Yxs"/>
                     </view>
                     <navigationItem key="navigationItem" id="HvY-vd-kQo"/>
+                    <connections>
+                        <outlet property="colorTableView" destination="KYW-Ly-u9J" id="e0C-mH-vjf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uwj-zY-JrE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -120,6 +123,9 @@
                         <viewLayoutGuide key="safeArea" id="Stg-66-NKd"/>
                     </view>
                     <navigationItem key="navigationItem" id="Tkn-vT-PJ3"/>
+                    <connections>
+                        <outlet property="randomUserTableView" destination="YWn-fN-raA" id="hgf-h3-XlL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mVk-O8-GP4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -177,7 +183,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="j79-dw-t9m" customClass="re">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="j79-dw-t9m" userLabel="Weather Table View">
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
@@ -205,6 +211,9 @@
                         <viewLayoutGuide key="safeArea" id="FIg-Fe-nDW"/>
                     </view>
                     <navigationItem key="navigationItem" id="6PB-qP-zVo"/>
+                    <connections>
+                        <outlet property="rectangleZoneTableView" destination="j79-dw-t9m" id="AlP-KU-mke"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hKk-2m-18J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

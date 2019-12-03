@@ -83,7 +83,7 @@ extension UserData {
         var userArr = [Users]()
         
         
-        guard let fileURL = Bundle.main.url(forResource: "ranUsers", withExtension: "json") else {
+        guard let fileURL = Bundle.main.url(forResource: "randomUser", withExtension: "json") else {
             fatalError("could not locate json file")
         }
         
@@ -97,8 +97,6 @@ extension UserData {
         } catch {
             fatalError("contents failed to load \(error)")
         }
-        
-        
         
         return userArr
     }
